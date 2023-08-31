@@ -1,5 +1,5 @@
 # MyNetwork
-Simple NetworkLayer for any Swift Project
+Simple Generic NetworkLayer for any Swift Project
 
 ## Usage
 
