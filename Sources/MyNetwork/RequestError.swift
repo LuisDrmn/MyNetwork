@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RequestError: LocalizedError {
+public enum RequestError: LocalizedError {
     case decode
     case invalidURL
     case noResponse
@@ -17,7 +17,7 @@ enum RequestError: LocalizedError {
     case emptyRequest
     case invalidRegion
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .decode:
             return "Unable to decode data"
@@ -30,7 +30,7 @@ enum RequestError: LocalizedError {
         }
     }
 
-    var recoverySuggestion: String? {
+    public var recoverySuggestion: String? {
         switch self {
         case .decode:
             return "Try again later"

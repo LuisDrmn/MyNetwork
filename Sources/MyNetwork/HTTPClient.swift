@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol HTTPClient {
+public protocol HTTPClient {
     var isDebug: Bool { get }
     func sendRequest<T: Codable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError>
 }
 
-extension HTTPClient {
+public extension HTTPClient {
     var isDebug: Bool {
         return false
     }
